@@ -1,237 +1,751 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Karam</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- icon box-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  </head>
-  <body>
-    <!-- start header design -->
-    <header class="header">
-      <a href="#" class="logo">
-        <span class="logo-c">C</span>ra<span class="logo-z">Z</span>y</a>
-      <i class="bx bx-menu" id="menu-icon"></i>
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#Protfolio">Protfolio</a>
-        <a href="#Contact">Contact</a>
-      </nav>
-    </header>
-    <!-- end header design -->
-    <!-- start section Home -->
-    <section class="home" id="home">
-      <div class="home-content">
-        <!-- <img src="imges/nav-landing.png" alt=""> -->
-        <h3>Hello, It's <span>Me</span></h3>
-        <h1>Karam obide</h1>
-        <h3>And I'm a <span class="multiple-text"></span></h3>
-        <p class="pareghraf">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad incidunt
-          modi dicta possimus qui. Necessitatibus, aliquam eligendi.
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-------("Meta")
+    ###*************
+       --- Primary Meta Tags
+    *************###
+    ---------------->
+    <title>Document</title>
+    <meta name="title" content="Cryptoza - Trusted & Secure Trading Crypto Wallet">
+    <meta name="description" content="This is a cryptocurrency wallet html template made by codewithsadee.">
+
+
+    <!-----("favicon")
+    ###*************
+       --- Link The Svg Logo
+    *************###
+    ---------------->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+
+    <!----("CSS Files")
+    ###*************
+       --- Custom CSS Link
+    *************###
+    ---------------->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!--("Google Font")
+    ###*************
+       --- FontF = Poppins
+    *************###
+    ---------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:
+    wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!--("NavegtionBar")
+    ###*************
+       --- Header Links
+    *************###
+    ---------------->
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="#">HaniCode</a></div>
+            <input type="radio" name="slide" id="menu-btn">
+            <input type="radio" name="slide" id="cancel-btn">
+            <ul class="nav-links">
+                <label for="cancel-btn" class="btnNav cancel-btn"><ion-icon name="close-outline"
+                        aria-hidden="true"></ion-icon></label>
+                <li><a class="id-activ active" href="#home">Home</a></li>
+                <li><a class="id-activ" href="#about">About</a></li>
+                <li><a class="id-activ" href="#services">services</a></li>
+
+                <!-- Droub Down Menu -->
+                <li>
+                    <a href="#" class="desktop-item">Droubdown Menu</a>
+                    <input type="checkbox" id="showDrop">
+                    <label for="showDrop" class="mobile-item">Droubdown Menu</label>
+                    <ul class="drop-me">
+                        <li><a href="#">Droup menu 1</a></li>
+                        <li><a href="#">Droup menu 2</a></li>
+                        <li><a href="#">Droup menu 3</a></li>
+                        <li><a href="#">Droup menu 4</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+            <div class="dark-light-lang">
+                <img src="/images//1f506.svg" alt="" id="icon">
+                <select id="select-where" name="select-where" required>
+                  <option value="">English</option>
+                  <option class="arab" value="">العربية</option>
+                </select>
+            <label for="menu-btn" class="btnNav menu-btn"><ion-icon name="menu-outline"
+                    aria-hidden="true"></ion-icon></label>
+                </div>
+        </div>
+    </nav>
+
+
+    <!-- ----------------------------------------_____Main Pages_____------------------------------------------- -->
+    <main>
+        <article>
+            <!--("First Page")
+            ###*************
+            --- Landing
+            *************###
+            ---------------->
+            <section id="home" class="hero" aria-label="Home">
+                <div class="container">
+
+                    <!-- contant Flex:1 -->
+                    <div class="hero-contant">
+                        <h2 class="hero-title">Welcome to <br/> <span class="STC">STC</span>Sinter</h2>
+                        <h3 class="h3-typed">And we are serve you <br/> <span class="multiple-text"></span></h3>
+                        <p class="hero-text">
+                            You might wonder why a designer would choose to use Morem text Paragraphs in English or
+                            their native language.
+                        </p>
+
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-primary">Get Started</a>
+
+                            <a href="#" class="play-btn">
+                                <div class="icon">
+                                    <ion-icon name="play" aria-hidden="true"></ion-icon>
+                                </div>
+                                <span class="span">How it works</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Image Flex:2 -->
+                    <div class="hero-banner">
+                        <figure class="hero-banner">
+                            <img src="images/work-steps.png" alt="hero banner" class="w-100" width="799"
+                                height="823">
+                        </figure>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!--("Secoun Page")
+            ###*************
+            --- Promo
+            *************###
+            ---------------->
+            <section id="about" class="section promo" aria-label="Promo">
+                <div class="container">
+                    <h2 class="h2 section-title text-center">Most Trusted Cryptocurrency Platform</h2>
+                    <p class="section-text text-center">
+                        A cryptocurrency is a tradable digital asset or digital form of money,
+                        built on blockchain technology that only exists online.
+                    </p>
+                    <ul class="grid-list">
+
+
+                        <!-- Promo Card:1 -->
+                        <li>
+                            <div class="promo-card bg-gray bg-hover revial-right">
+                                <div class="card-icon">
+                                    <ion-icon name="share-social-outline" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <h3 class="h3 card-title">Best Trading Platform</h3>
+
+                                <p class="card-text">
+                                    Cryptocurrency does not exist in physical form like paper money and is typically not
+                                    issued by a central authority.
+                                </p>
+
+                                <a href="#" class="btn-link">
+                                    <span class="span">Explore More</span>
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+                        </li>
+
+
+                        <!-- Promo Card:2 -->
+                        <li>
+                            <div class="promo-card bg-gray bg-hover">
+                                <div class="card-icon">
+                                    <ion-icon name="share-social-outline" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <h3 class="h3 card-title">Best Trading Platform</h3>
+
+                                <p class="card-text">
+                                    Cryptocurrency does not exist in physical form like paper money and is typically not
+                                    issued by a central authority.
+                                </p>
+
+                                <a href="#" class="btn-link">
+                                    <span class="span">Explore More</span>
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+                        </li>
+
+
+                        <!-- Promo Card:3 -->
+                        <li>
+                            <div class="promo-card bg-gray bg-hover revial-lift">
+                                <div class="card-icon">
+                                    <ion-icon name="share-social-outline" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <h3 class="h3 card-title">Best Trading Platform</h3>
+
+                                <p class="card-text">
+                                    Cryptocurrency does not exist in physical form like paper money and is typically not
+                                    issued by a central authority.
+                                </p>
+
+                                <a href="#" class="btn-link">
+                                    <span class="span">Explore More</span>
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </section>
+
+
+    <!--("Third Page")
+    ###*************
+    --- Stats
+    *************###
+    ---------------->
+            <section id="services" class="stats" aria-label="statistics">
+                <div class="container">
+
+
+                    <!-- Contant Flex:1 -->
+                    <div class="stats-contant">
+                        <h2 class="h2 section-title">Our Best Users Are all over the Worldwide Coverage</h2>
+                        <p class="sction-text">
+                            You might wonder why a designer would choose to use Morem text Paragraphs Lorem Ipsum
+                            available but the majority
+                        </p>
+                        <p class="sction-text">
+                            You might wonder why a designer would choose to use Morem text Paragraphs Lorem Ipsum
+                            available but the majority
+                            You might wonder why a designer would choose to use Morem text Paragraphs Lorem Ipsum
+                            available but the majority
+                        </p>
+
+                        <ul class="stats-list revial-bottom">
+                            <li>
+                                <div class="stats-card bg-gray bg-hover">
+                                    <h3 class="h3 card-title">150k<span>+</span></h3>
+                                    <p class="card-text">
+                                        Pepole who Have Joined
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="stats-card bg-gray bg-hover">
+                                    <h3 class="h3 card-title">150k<span>+</span></h3>
+                                    <p class="card-text">
+                                        Pepole who Have Joined
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="stats-card bg-gray bg-hover">
+                                    <h3 class="h3 card-title">150k<span>+</span></h3>
+                                    <p class="card-text">
+                                        Pepole who Have Joined
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <!-- Image Flex:2 -->
+                    <figure class="stats-banner">
+                        <img src="images/stats-banner.png" alt="map" class="w-100 revial-right" width="797" height="454">
+                    </figure>
+
+
+                </div>
+            </section>
+
+
+            <!--("Fourd Page")
+    ###*************
+    --- CTA
+    *************###
+    ---------------->
+            <section class="section cta bg-gray" aria-label="call to action">
+                <div class="container">
+                    <h2 class="h2 section-tetil text-center cta-h2">Start Trading on Quiety</h2>
+
+                    <p class="section-text text-center cta-p">
+                        If you use this site regularly and would like to help keep the site on the Internet, please
+                        consider donating a small.
+                    </p>
+
+                    <a href="#" class="btn btn-primary">
+                        <span class="span">Read Reviews</span>
+                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    </a>
+                </div>
+            </section>
+
+
+            <!--("Fifth Page")
+    ###*************
+    --- App
+    *************###
+    ---------------->
+            <section class="app" aria-label="app">
+                <div class="container">
+                    <div class="app-card bg-gray">
+
+
+                        <!-- Contant Flex:1 -->
+                        <div class="card-content">
+                            <h2 class="h2 section-title h2-app">Also Available on IOS & Android</h2>
+                            <p class="section-text p-app">
+                                This site regularly and would like to help keep the site on the Internet please consider
+                                donating a small.
+                            </p>
+
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-primary">
+                                    <ion-icon name="logo-google-playstore" aria-hidden="true"></ion-icon>
+                                    <div>
+                                        <p class="btn-text">Available on the</p>
+
+                                        <p class="btn-title">Play Store</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="btn btn-primary">
+                                    <ion-icon name="logo-apple" aria-hidden="true"></ion-icon>
+                                    <div>
+                                        <p class="btn-text">Available on the</p>
+
+                                        <p class="btn-title">Aplle Store</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <!-- Image Flex:2 -->
+                        <figure class="card-banner">
+                            <img src="images/download-banner.png" width="383" height="384" alt="download banner"
+                                loading="lazy" class="w-100 revial-right">
+                        </figure>
+
+
+                    </div>
+                </div>
+            </section>
+        </article>
+
+    </main>
+
+
+    <!--("sixth Page")
+    ###*************
+    --- curses
+    *************###
+    ---------------->
+    <section class="curses" aria-label="curses">
+        <div class="container">
+            <h2 class="h2 section-tetil text-center revial-top">Also Available on IOS & Android</h2>
+            <p class="section-text text-center">
+                This site regularly and would like to help keep the site on the Internet please consider donating a
+                small.
+            </p>
+
+            <!-- To Grid Systim -->
+            <div class="courses-container">
+
+
+                <!-- Curse:1 -->
+                <article class="course revial-right">
+                    <div class="course-img">
+                        <img src="images/gg1.png">
+                    </div>
+                    <div class="course-info">
+                        <h3 class="h3 card-title h3-curses">Responsev Social Media Website UI Design</h3>
+                        <p class="card-text p-course">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam commodi,
+                            blanditiis facilis magni tempora sit? Ea.
+                        </p>
+                        <a href="#" class="btn-link">
+                            <span class="span">Explore More</span>
+                            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- Curse:2 -->
+                <article class="course">
+                    <div class="course-img">
+                        <img src="images/gg2.png">
+                    </div>
+                    <div class="course-info">
+                        <h3 class="h3 card-title h3-curses">Responsev Social Media Website UI Design</h3>
+                        <p class="card-text p-course">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam commodi,
+                            blanditiis facilis magni tempora sit? Ea.
+                        </p>
+                        <a href="#" class="btn-link">
+                            <span class="span">Explore More</span>
+                            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- Curse:3 -->
+                <article class="course revial-lift">
+                    <div class="course-img">
+                        <img src="images/gg3.png">
+                    </div>
+                    <div class="course-info">
+                        <h3 class="h3 card-title h3-curses">Responsev Social Media Website UI Design</h3>
+                        <p class="card-text p-course">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam commodi,
+                            blanditiis facilis magni tempora sit? Ea.
+                        </p>
+                        <a href="#" class="btn-link">
+                            <span class="span ">Explore More</span>
+                            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                        </a>
+                    </div>
+                </article>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!--("saven Page")
+    ###*************
+    --- Books
+    *************###
+    ---------------->
+    <section class="section-books" id="section-books">
+        <h2 class="h2 section-tetil text-center">on IOS & Android</h2>
+        <p class="section-text text-center">
+            This site regularly and would like toe consider donating a small.
         </p>
-        <a href="#" class="btn">Download CV</a>
-        <div class="social-media">
-          <a href="#"><i class="bx bxl-facebook"></i></a>
-          <a href="#"><i class="bx bxl-twitter"></i></a>
-          <a href="#"><i class="bx bxl-instagram-alt"></i></a>
-          <a href="#"><i class="bx bxl-linkedin"></i></a>
+
+        <!-- To Grid System -->
+        <div class="container">
+
+            <!-- Book:1 -->
+            <div class="product">
+                <div class="product-card">
+                    <h2 class="name">Nike Shose</h2>
+                    <span class="price">$120.00</span>
+                    <a class="popup-btn">Quik View</a>
+                    <img class="product-img" src="images/photographer.jpg" alt="//">
+                </div>
+                <div class="popup-view">
+                    <div class="popup-card">
+                        <a class="close-btn" href="#section-books"><ion-icon name="close-outline"></ion-icon></a>
+                        <div class="product-img">
+                            <img src="images/photographer.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Nike Shose<br><span>Mens Sport</span></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eligendi similique libero
+                                Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ad
+                                distinctio veniam nam adipisci itaque laboriosam, cum et suscipit, vitae possimus at ea
+                                culpa quis, numquam temporibus! Neque, modi! Quidem!</p>
+                            <span class="price">$120.00</span>
+                            <a href="#" class="add-cart-btn">Add to Cart</a>
+                            <a href="#" class="add-wish">Add tp Wishlist</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Book:2 -->
+            <div class="product">
+                <div class="product-card">
+                    <h2 class="name">Nike Shose</h2>
+                    <span class="price">$120.00</span>
+                    <a class="popup-btn">Quik View</a>
+                    <img class="product-img" src="images/photographer.jpg" alt="//">
+                </div>
+                <div class="popup-view">
+                    <div class="popup-card">
+                        <a class="close-btn" href="#section-books"><ion-icon name="close-outline"></ion-icon></a>
+                        <div class="product-img">
+                            <img src="images/photographer.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Nike Shose<br><span>Mens Sport</span></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eligendi similique libero
+                                Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ad
+                                distinctio veniam nam adipisci itaque laboriosam, cum et suscipit, vitae possimus at ea
+                                culpa quis, numquam temporibus! Neque, modi! Quidem!</p>
+                            <span class="price">$120.00</span>
+                            <a href="#" class="add-cart-btn">Add to Cart</a>
+                            <a href="#" class="add-wish">Add tp Wishlist</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Book:3 -->
+            <div class="product">
+                <div class="product-card">
+                    <h2 class="name">Nike Shose</h2>
+                    <span class="price">$120.00</span>
+                    <a class="popup-btn">Quik View</a>
+                    <img class="product-img" src="images/photographer.jpg" alt="//">
+                </div>
+                <div class="popup-view">
+                    <div class="popup-card">
+                        <a class="close-btn" href="#section-books"><ion-icon name="close-outline"></ion-icon></a>
+                        <div class="product-img">
+                            <img src="images/photographer.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Nike Shose<br><span>Mens Sport</span></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eligendi similique libero
+                                Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ad
+                                distinctio veniam nam adipisci itaque laboriosam, cum et suscipit, vitae possimus at ea
+                                culpa quis, numquam temporibus! Neque, modi! Quidem!</p>
+                            <span class="price">$120.00</span>
+                            <a href="#" class="add-cart-btn">Add to Cart</a>
+                            <a href="#" class="add-wish">Add tp Wishlist</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Book:4 -->
+            <div class="product">
+                <div class="product-card">
+                    <h2 class="name">Nike Shose</h2>
+                    <span class="price">$120.00</span>
+                    <a class="popup-btn">Quik View</a>
+                    <img class="product-img" src="images/photographer.jpg" alt="//">
+                </div>
+                <div class="popup-view">
+                    <div class="popup-card">
+                        <a class="close-btn" href="#section-books"><ion-icon name="close-outline"></ion-icon></a>
+                        <div class="product-img">
+                            <img src="images/photographer.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Nike Shose<br><span>Mens Sport</span></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eligendi similique libero
+                                Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ad
+                                distinctio veniam nam adipisci itaque laboriosam, cum et suscipit, vitae possimus at ea
+                                culpa quis, numquam temporibus! Neque, modi! Quidem!</p>
+                            <span class="price">$120.00</span>
+                            <a href="#" class="add-cart-btn">Add to Cart</a>
+                            <a href="#" class="add-wish">Add tp Wishlist</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Book:5 -->
+            <div class="product">
+                <div class="product-card">
+                    <h2 class="name">Nike Shose</h2>
+                    <span class="price">$120.00</span>
+                    <a class="popup-btn">Quik View</a>
+                    <img class="product-img" src="images/photographer.jpg" alt="//">
+                </div>
+                <div class="popup-view">
+                    <div class="popup-card">
+                        <a class="close-btn" href="#section-books"><ion-icon name="close-outline"></ion-icon></a>
+                        <div class="product-img">
+                            <img src="images/photographer.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Nike Shose<br><span>Mens Sport</span></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eligendi similique libero
+                                Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ad
+                                distinctio veniam nam adipisci itaque laboriosam, cum et suscipit, vitae possimus at ea
+                                culpa quis, numquam temporibus! Neque, modi! Quidem!</p>
+                            <span class="price">$120.00</span>
+                            <a href="#" class="add-cart-btn">Add to Cart</a>
+                            <a href="#" class="add-wish">Add tp Wishlist</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Book:6 -->  
+             <div class="product">
+                <div class="product-card revial-lift">
+                    <h2 class="name">Nike Shose</h2>
+                    <span class="price">$120.00</span>
+                    <a class="popup-btn">Quik View</a>
+                    <img class="product-img" src="images/photographer.jpg" alt="//">
+                </div>
+                <div class="popup-view">
+                    <div class="popup-card">
+                        <a class="close-btn" href="#section-books"><ion-icon name="close-outline"></ion-icon></a>
+                        <div class="product-img">
+                            <img src="images/photographer.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>Nike Shose<br><span>Mens Sport</span></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eligendi similique libero
+                                Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ad
+                                distinctio veniam nam adipisci itaque laboriosam, cum et suscipit, vitae possimus at ea
+                                culpa quis, numquam temporibus! Neque, modi! Quidem!</p>
+                            <span class="price">$120.00</span>
+                            <a href="#" class="add-cart-btn">Add to Cart</a>
+                            <a href="#" class="add-wish">Add tp Wishlist</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
-      </div>
-      <div class="home-img">
-        <img class="img-landing" src="imges/img-landing.png "alt="" />
-      </div>
+
+
     </section>
-    <!-- end section Home -->
-    <!-- START section about -->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="imges/img copy.png" class="img-about" alt="" />
-      </div>
 
-      <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>Youtuober</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          eaque eveniet eius nisi architecto expedita amet dolorum quia porro
-          tenetur quidem soluta, itaque odit, ab, nesciunt voluptatem error
-          laborum tempora ad! Reiciendis deserunt expedi ta libero modi
-          distinctio impedit optio, totam beatae numquam quas repudiandae culpa
-          molestiae?
-        </p>
-        <a href="#" class="btn">Read More</a>
-      </div>
-    </section>
 
-    <!-- end section about -->
+    <!--("Last Page")
+    ###*************
+    --- Footer
+    *************###
+    ---------------->
+    <footer class="footer">
 
-    <!-- start services -->
-    <section class="services" id="services">
-      <h2 class="heading">Our <span>Services</span></h2>
 
-      <div class="services-container">
-        <div class="services-box">
-          <img src="imges/hosting-professional.png" alt="" />
-          <h3>Web Development</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
-            recusandae voluptas doloremque dolores quod iste repudiandae cumque
-            excepturi error voluptatum!
-          </p>
-          <a href="#" class="btn">Read More</a>
+        <!-- Main Links In Page -->
+        <div class="footer-top section">
+            <div class="container">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="images/logo.svg" width="185" height="31" alt="Cryptoza home">
+                    </a>
+
+                    <p class="footer-text">
+                        Bitcoin, first released as open-source software in is the first decentralized
+                        cryptocurrency. Since the release of bitcoin
+                    </p>
+                </div>
+
+                <ul class="footer-list">
+                    <li>
+                        <a class="footer-link revial-bottom" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="footer-link revial-top" href="#">About</a>
+                    </li>
+                    <li>
+                        <a class="footer-link revial-bottom" href="#">services</a>
+                    </li>
+                    <li>
+                        <a class="footer-link revial-top" href="#">Market</a>
+                    </li>
+                    <li>
+                        <a class="footer-link revial-bottom" href="#">Trading</a>
+                    </li>
+                </ul>
+
+                <div class="social-warpper">
+                    <p class="h3 social-list-title">Join the Conversation</p>
+
+                    <ul class="social-list">
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon class="revial-bottom" name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon class="revial-top" name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon class="revial-bottom" name="logo-dribbble"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon class="revial-top" name="logo-behance"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <div class="services-box">
-          <img src="imges/hosting-basic.png" alt="" />
-          <h3>Graphice design</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
-            recusandae voluptas doloremque dolores quod iste repudiandae cumque
-            excepturi error voluptatum!
-          </p>
-          <a href="#" class="btn">Read More</a>
+
+        <!-- Main Notofiction Out Of The Page -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">
+                    Copyright by Hani. All rights reserved.
+                </p>
+
+                <ul class="footer-bottom-list">
+                    <li>
+                        <a class="footer-bottom-list" href="#">Support</a>
+                    </li>
+                    <li>
+                        <a class="footer-bottom-list" href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <div class="services-box">
-          <img src="imges/hosting-advanced.png" alt="" />
-          <h3>Digital Marketing</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
-            recusandae voluptas doloremque dolores quod iste repudiandae cumque
-            excepturi error voluptatum!
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-      </div>
-    </section>
-    <!-- end services -->
+        
+    </footer>
 
-<!-- start section Protofolio -->
+    <!--("Ion Icon")
+    ###*************
+    --- Links icon
+    *************###
+    ---------------->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-<section class="Protfolio" id="Protfolio">
-  <h2 class="heading">Latest <span>Project</span></h2>
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-  <div class="protfolio-container">
-    <div class="protfolio-box">
-      <img class="about-img" src="imges/cat-01.jpg" alt="">
-      <div class="protfolio-layer">
-        <h4>Web Design</h4>
-        <p class="protofolio-pp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto?</p>
-        <a href="/love.html"><i class="bx bx-link-external"></i></a>
-      </div>
-    </div>
-
-        <div class="protfolio-box">
-      <img class="about-img" src="imges/cat-02.jpg" alt="">
-      <div class="protfolio-layer">
-        <h4>Graphice design</h4>
-        <p class="protofolio-pp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto hani?</p>
-        <a href="/ineme.html"><i class="bx bx-link-external"></i></a>
-      </div>
-    </div>
-
-        <div class="protfolio-box">
-      <img class="about-img" src="imges/cat-03.jpg" alt="">
-      <div class="protfolio-layer">
-        <h4>Digital Marketing</h4>
-        <p class="protofolio-pp">Lorem ipsum dolor sit amet consectetur adipisicing elit. architecto?</p>
-        <a href="#"><i class="bx bx-link-external"></i></a>
-      </div>
-    </div>
-
-        <div class="protfolio-box">
-      <img class="about-img" src="imges/cat-04.jpg" alt="">
-      <div class="protfolio-layer">
-        <h4>Enemy drow</h4>
-        <p class="protofolio-pp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, architecto go port life?</p>
-        <a href="#"><i class="bx bx-link-external"></i></a>
-      </div>
-    </div>
-
-        <div class="protfolio-box">
-      <img class="about-img" src="imges/cat-05.jpg" alt="">
-      <div class="protfolio-layer">
-        <h4>Cart drees</h4>
-        <p class="protofolio-pp">Lorem ipsum dolor sit amet adipisicing elit. Corrupti, architecto?</p>
-        <a href="#"><i class="bx bx-link-external"></i></a>
-      </div>
-    </div>
-
-        <div class="protfolio-box">
-      <img class="about-img" src="imges/cat-06.jpg" alt="">
-      <div class="protfolio-layer">
-        <h4>Photos Love</h4>
-        <p class="protofolio-pp">Lorem ipsum dolor sit amet consectetur. Corrupti, architecto?</p>
-        <a href="#"><i class="bx bx-link-external"></i></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- end section Protofolio -->
-
-<!-- start section content -->
-
-<section class="home-content" id="Contact">
-    <h2 class="heading">Contact <span>Us</span></h2>
-    <p class="p">We Alwaes Keep In <span>Toutch</span></p>
-  <div class="home-content-container">
-  <div class="home-content-box">
-    <i class="bx bxl-whatsapp" id="bx"></i>
-    <h3>Call Me in <span>Whatss Up</span></h3>
-    <p>My Phone Number Is: 0941430561 <br> I Will Be There from 4am t0 8em</p>
-        <a href="#" class="btn">Contact</a>
-  </div>
-
-    <div class="home-content-box">
-    <i class="bx bxl-twitter" id="bx"></i>
-    <h3>Call Me in <span> Tweter</span></h3>
-    <p>My Phone Number Is: 0941430561 <br> I Will Be There from 4am t0 8em</p>
-        <a href="#" class="btn">Contact</a>
-  </div>
-
-    <div class="home-content-box">
-    <i class="bx bxl-instagram-alt" id="bx"></i>
-    <h3>Call Me in <span> Instagram</span></h3>
-    <p>My Phone Number Is: 0941430561 <br> I Will Be There from 4am t0 8em</p>
-        <a href="#" class="btn">Contact</a>
-  </div>
-
-    <div class="home-content-box">
-    <i class="bx bxl-facebook" id="bx"></i>
-    <h3>Call Me in <span>facebook</span></h3>
-    <p>My Phone Number Is: 0941430561 I Will Be There from 4am t0 8em</p>
-    <a href="#" class="btn">Contact</a>
-  </div>
-  </div>
-</section>
-
-<!-- end section content -->
-
-<!-- start footer -->
-<footer class="footer">
-  <div class="footer-text">
-    <p>Copyright &copy; 2023 by fronted Developar <span>Hani Amr</span> | All Right Reserved</p>
-  </div>
-  <div class="footer-iconTop">
-    <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-  </div>
-</footer>
-<!-- end footer -->
+    <!--("Main Java Scrept")
+    ###*************
+    --- Link JS
+    *************###
+    ---------------->
+    <script src="script.js"></script>
 
 
-<!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
-
-
-<script src="https://unpkg.com/scrollreveal"></script>
-
-
-<script src="main.js"></script>
 </body>
+
 </html>
